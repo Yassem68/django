@@ -1,0 +1,42 @@
+{% extends 'appli/base.html' %}
+{% load static %}
+{% block content %}
+<h2>Information sur le Reseau Social</h2>
+
+<div class="res">
+<h3>Nom du Réseau Social :</h3>
+<p class="res">
+    {{reseaux.nom_rs}}
+</p>
+<h3>Créateur :</h3>
+<p class="res">
+    {{reseaux.createur}}
+</p>
+<h3>Date de création :</h3>
+<p class="res">
+    {{reseaux.date_sortie}}
+</p>
+<h3>Utilité du Réseau Social :</h3>
+<p class="res">
+    {{reseaux.utilite}}
+</p>
+
+<h3>Lieu de création :</h3>
+<p class="res">
+    {{reseaux.lieu_creation}}
+</p>
+
+<h3>Nombre d'utilisateurs :</h3>
+<p class="res">
+    {{reseaux.nb_utilisateurs}}
+</p>
+
+<h3>Description :</h3>
+<p class="res">
+    {{reseaux.description}}
+</p>
+
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'appli/base.html' %}
+{% load static %}
+
+{% block content %}
+<h2>Veuillez ajouter un créateur de Réseau Social</h2>
+<form action="/appli/traitementc/" method="post" />
+    {% csrf_token %}
+    {{form.as_ul}}
+<input type="submit" value="Ajouter un Créateur"/>
+</form>
+
+{% endblock %}
+

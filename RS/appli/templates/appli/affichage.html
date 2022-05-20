@@ -1,0 +1,18 @@
+{% extends 'appli/base.html' %}
+{% load static %}
+{% block content %}
+<h2> Liste des Réseaux Sociaux créé</h2>
+
+
+<a href="/appli/ajout/" class="khey"  > ajouter un Réseau Social </a>
+
+<ol>
+    {% for r in liste %}
+    <li>  {{r}} <a class="afficher" href="/appli/affiche/{{r.id}}/"> Revue </a>   <a class="change" href="/appli/update/{{r.id}}/"  >Modifier </a>  <a class="suppr" href="/appli/delete/{{r.id}}"> Supprimer</a> </li>
+
+    {% endfor %}
+
+</ol>
+
+
+{% endblock %}

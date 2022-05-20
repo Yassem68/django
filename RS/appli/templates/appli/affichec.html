@@ -1,0 +1,42 @@
+{% extends 'appli/base.html' %}
+{% load static %}
+{% block content %}
+
+<h2>Information sur le Créateur</h2>
+
+<div class="res">
+<h3>Nom du Créateur :</h3>
+<p class="res">
+    {{createur.nom}}
+</p>
+<h3> Prénom du Créateur :</h3>
+<p class="res">
+    {{createur.prenom}}
+</p>
+<h3>Nom du Réseau Social créé par le Concepteur :</h3>
+<p class="res">
+    {{createur.nom_rs}}
+</p>
+<h3>Date de naissance du Créateur :</h3>
+<p class="res">
+    {{createur.date_naissance}}
+</p>
+
+<h3>Lieu de naissance du Créateur :</h3>
+<p class="res">
+    {{createur.lieu_naissance}}
+</p>
+
+<h3>Nationnalité du Créateur :</h3>
+<p class="res">
+    {{createur.nationnalite}}
+</p>
+
+<h3>Autre infos :</h3>
+<p class="res">
+    {{createur.plus}}
+</p>
+</p>
+</div>
+
+{% endblock %}

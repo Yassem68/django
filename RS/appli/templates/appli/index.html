@@ -1,0 +1,14 @@
+{% extends 'appli/base.html' %}
+
+{% load static %}
+{% block content %}
+<h2> Bienvenue sur la liste des Réseaux Sociaux !</h1>
+<a href="/appli/ajout/" class="khey"  > ajouter un livre </a>
+<ol>
+    {% for r in list %}
+        <li> {{r}}  </li>
+
+    {% endfor %}
+</ol>
+
+{% endblock %}

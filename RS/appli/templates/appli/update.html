@@ -1,0 +1,16 @@
+{% extends 'appli/base.html' %}
+
+{% load static %}
+{% block content %}
+<h2>Veuillez ajouter un Créateur de réseau social</h2>
+ {% if id is not None %}
+    <form method="post"  action="/appli/updatetraitement/{{id}}/">
+   {% else %}}
+
+   {% endif %}}
+ {% csrf_token %}
+ {{form.as_ul}}
+ <input type="submit" value="Sauvegarder"/>
+ </form>
+
+{% endblock %}

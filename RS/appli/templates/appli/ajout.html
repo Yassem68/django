@@ -1,0 +1,16 @@
+{% extends 'appli/base.html' %}
+{% load static %}
+
+{% block content %}
+<h2>Veuillez ajouter un réseau social</h2>
+    {% if id != '' %}
+
+<form action="/appli/traitement/" method="post" />
+    {% else %}
+    {% endif %}
+    {% csrf_token %}
+    {{form.as_ul}}
+<input type="submit" value="Ajouter le réseau social"/>
+</form>
+
+{% endblock %}
